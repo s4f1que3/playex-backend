@@ -39,7 +39,7 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 app.use(cors({
-  origin: ['https://playex.vercel.app', 'http://localhost:3000']
+  origin: ['https://playex-backend.onrender.com', 'http://localhost:3000']
 }));
 
 // Error handling middleware
