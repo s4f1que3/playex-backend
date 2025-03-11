@@ -38,6 +38,9 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
   });
 }
+app.use(cors({
+  origin: ['https://playex.vercel.app', 'http://localhost:3000']
+}));
 
 // Error handling middleware
 app.use((err, req, res, next) => {
